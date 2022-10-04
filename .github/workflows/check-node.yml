@@ -1,7 +1,5 @@
 name: Learning Github actions - Node
-on: |
-  [push]
-  
+on: [push]
 jobs:
   check-node-version:
     runs-on: ubuntu-latest
