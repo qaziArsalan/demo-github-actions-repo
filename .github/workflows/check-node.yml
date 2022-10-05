@@ -15,7 +15,6 @@ jobs:
       - name: working-with-vars
         env: 
             NAMED: Arsalan
-        run: node -p 'console.log("hello")'
-      - run: node -p 'process.env.NAMED'
+        run: node -p 'console.log("hello"); process.env.NAMED'
       
   
