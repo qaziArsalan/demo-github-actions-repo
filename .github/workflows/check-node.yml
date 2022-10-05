@@ -12,5 +12,9 @@ jobs:
       - run: npm install @hapi/hapi
       - run: npm --version
       - run: node --version
+      - name: working-with-vars
+        env: 
+            NAMED: Arsalan
+        run: node -p 'console.log("hello")'
       
   
