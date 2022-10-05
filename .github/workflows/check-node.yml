@@ -16,5 +16,6 @@ jobs:
         env: 
             NAMED: Arsalan
         run: node -p 'console.log("hello")'
+      - run: node -p 'process.env.NAMED'
       
   
