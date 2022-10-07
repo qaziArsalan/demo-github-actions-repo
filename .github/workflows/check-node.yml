@@ -16,5 +16,21 @@ jobs:
         env: 
             NAMED: Arsalan
         run: node -p 'console.log("hello"); process.env.NAMED'
+  check-npm-version:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+        - uses: actions/setup-node@v3
+          with:
+            node-version: '16'
+        - run: npm install --save-dev nodemon
+        - run: mkdir src
+        - run: cd src
+        - run: touch index.js && node --version
+        - run: npm --version
+        - name: printinh-out-name
+          run: node -p 'console.log("Arsalan")'
+        
       
+    
   
